@@ -1,1 +1,1 @@
-This app is meant to show many of the ways JS events can enhance a website.
+This app shows many of the ways JS events can enhance a website.
