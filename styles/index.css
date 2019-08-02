@@ -1,0 +1,26 @@
+.top-left, 
+.top-middle, 
+.top-right {
+    position: relative;
+    border-style: solid;
+    border-color: black;
+    margin: auto;
+    display: block;
+    width: 30%;
+    height: 20%;
+    padding: 5%;
+    text-align: center;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 5%;
+}
