@@ -5,6 +5,8 @@
     <title>Eventful</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <script src="scripts/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
     <br>
@@ -65,9 +67,12 @@
           </p>
         </div>
         <div class='.col-md-4 top-right'>
-          <p id='mouseover'>
+          <p id='mouseover' onmouseover='mouseOver()'>
             mouseover
           </p>
+          <p id='jq-hover'>
+            JQuery: hover
+          </p>  
         </div>
       </div>
 
@@ -109,5 +114,14 @@
 
     </div>
 
+  <script>
+    $(function(){
+      $('p#jq-hover').hover(function(){
+        $(this).css('color', 'red');
+        }, function(){
+        $(this).css('color', 'blue');
+      });
+    });
+  </script>
   </body>
 </html>
